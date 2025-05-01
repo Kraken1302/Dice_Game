@@ -1,0 +1,63 @@
+* {
+    margin: 0; /* Removes default margin from all elements */
+    padding: 0; /* Removes default padding from all elements */
+    text-align: center; /* Centers text horizontally */
+}
+
+h1 {
+    background-color: #081b31; /* Sets a dark blue background color */
+    color: aliceblue; /* Sets text color to a very light bluish white */
+    height: 5rem; /* Sets the height to 5 rem units (1 rem = font size of root element, usually 16px. So 5rem = 80px) */
+    line-height: 5rem; /* Vertically centers the text inside h1 by matching line height with container height */
+}
+
+.choice {
+    height: 200px; /* Fixed height of the choice box */
+    width: 200px; /* Fixed width of the choice box */
+}
+
+.choice:hover {
+    opacity: 0.5; /* Makes the element semi-transparent on hover */
+    cursor: pointer; /* Changes the mouse cursor to a pointer (hand) on hover */
+}
+
+img {
+    height: 200px; /* Sets the image height */
+    width: 200px; /* Sets the image width */
+    object-fit: cover; /* Ensures the image covers the box without stretching */
+    border-radius: 50%; /* Makes the image circular */
+}
+
+.choices {
+    display: flex; /* Makes a flex container for layout */
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    gap: 3rem; /* Adds 3rem (48px) space between flex items */
+    margin-top: 5rem; /* Adds 5rem (80px) space above this section */
+}
+
+.score-board {
+    display: flex; /* Uses flex layout */
+    justify-content: center; /* Horizontally centers child elements */
+    align-items: center; /* Vertically aligns items to center */
+    margin-top: 3rem; /* Adds space above scoreboard */
+    font-size: 2rem; /* Sets base font size to 2rem (32px) */
+    gap: 70px; /* Adds 70px space between items */
+}
+
+#user-score, #comp-score {
+    font-size: 5 rem; /* Sets the font size to 5rem (should be '5rem' without space; otherwise, it may not work correctly) */
+}
+
+.msg-container {
+    margin-top: 4rem; /* Adds space above message container */
+}
+
+#msg {
+    background-color:#081b31; /* Dark blue background for the message */
+    color: aliceblue; /* Light text color */
+    font-size: 2rem; /* Font size of message text */
+    display: inline; /* Makes the element inline (won’t take full width) */
+    padding: 1rem; /* Adds inner spacing of 1rem (16px) */
+    border-radius: 1rem; /* Rounds the corners of the box */
+}
